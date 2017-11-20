@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Base styling er til store skærme - media queries er nederst*/
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+	body {
+		background: #F1F6F8;
+		font-family: sans-serif;
+		margin: 0 auto;
+}
+
+	p {
+		font-family: 'lato', sans-serif;
+		color: black;
+		font-size: 160%;
+		line-height: 155%;
+		padding: 3%;
+		text-align: left;
+}
+/* Overskrifter*/
+	h3 {
+		font-size: 175%;
+		line-height: 155%;
+		font-weight: 500; 
+		color: black;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 0;
+}
+
+/*Links i menuer*/
+	a {
+		color: #524C56;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 90%;
+}
+	a:hover {
+		color: #C3D7DF;
+}
+/*Billeder*/
+	img {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+		height: auto;
+		width: auto;
+		margin-bottom: -4px;
+}
+
+/*Styling af wrapper*/
+	#wrapper {
+		max-width: 1200px;
+		margin: 0 auto; /*centrere det på siden*/
+}
+/*banner wrapper*/
+	.banner-wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 0 5% 0; /*de 5% tilf'jer lidt plads under billed slideren*/
+}
+
+	header {
+		width: 100%;
+		height: 100px;
+		top: 0;
+		left: 0;
+}
+
+	#logo {
+		margin: 20px;
+		float: left;
+		width: 200px;
+		height: 60px;
+		background: url(../img/icons/sweetbot_logo.png) no-repeat center;
+}
+	#hotbot {
+		margin-top: -40px;
+		float: right;
+		width: 100px;
+		height: 100px;
+		 
+	}
+/*Navigations menu starter*/
+	nav {
+		float: right;
+		padding: 25px 20px 0px 0px;
+}
+/* Hamburger menu - mobil version*/
+	#menu-icon {
+		display: hidden;
+		width: 40px;
+		height: 40px;
+		margin-top: -5px;
+		background: url(../img/icons/nav-blue.png) center;
+}
+
+
+
+
+/*selve menuen er jo en liste, her bliver den til en ordentlig menu*/
+	ul {
+		list-style: none /*fjerner liste punkterne*/
+}
+	nav ul li {
+		font-family: 'lato', sans-serif;
+		font-size: 130%;
+		display: inline-block; /*så de bliver vandrette*/
+		float: left;
+		padding: 10px; 
+}
+	nav ul li a { /*styling a menu links*/
+		color: #749CD3;
+}
+/*Den side man er på*/
+	.current {
+		color: #3F5767;
+}
+	a:hover {
+		color: #A5BDCD;
+}
+/*Navigations menu færdig!*/
+
+
+	.slider {
+		max-width: 1200px;
+}
+	.slider1 img {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+}
+/*fjerne previous og next knapper til slider navigation*/
+	.slider .bx-wrapper .bx-controls-direction a {
+		display: none;
+}
+/*Tre Ikoner*/
+	.one-third {
+		width: 33.333%;
+		float: left;
+		text-align: justify;
+		text-align: center;
+}
+/*Ikon baggrund*/
+	.icon-wrap {
+		margin: 0 auto;
+		width: 300px;
+		height: 300px;
+		border-radius: 100%; /*gør den runde*/
+		text-align: center;
+		margin-top: 8%;
+		margin-bottom: 8%;
+}
+/*ikoner*/
+	.icon-wrap i {
+		text-align: center;
+		color: #F0F0F0;
+		font-size: 450%;
+		padding: 20%;
+}
+/*venstre paragraf kolonne*/
+	.left-col {
+		float: left;
+		margin: 0 auto;
+		width: 60%;
+		height: auto;
+		padding: 1%;
+}
+/*computer billede*/
+	.sidebar {
+		float: right;
+		margin: 0 auto;
+		width: 32%;
+		height: auto;
+		padding: 1%;
+}
+	.one-third-padding {
+		width: 29%;
+		float: left;
+		margin: 2%;
+		text-align: justify;
+}
+/*mellemrum*/
+	.clearfix-padding {
+		clear: both;
+		padding: 2%;
+}
+
+/*Footer starter*/
+	footer {
+		background: #749CD3;
+		width: 100%;
+		overflow: auto;
+		height: 100px;
+		margin-bottom: 0px;
+	
+}
+	.footer-tekst {
+		font-size: 145%;
+		font-family: 'lato', sans-serif;
+		line-height: 155%; 
+		font-weight: -100;
+		color: white;
+		text-align: center;
+		padding-top: 30px;
+}
+
+
+
+
+/*Media Queries*/
+
+/* Medium skærme*/
+@media screen and (max-width: 1080px) {
+	
+		.icon-wrap {
+		height: 230px;
+		width: 230px;
+		margin-top: 3%;
+	}
+	
+		h3 {
+		font-size: 140%;
+	}
+}
+	
+/*Mobiler*/
+@media screen and (max-width: 768px) {
+	p {
+		font-size: 120%;
+	}
+	h3 {
+		font-size: 140%;
+	}
+	header {
+		height: 80px;
+		position: relative;
+	}
+	#logo {
+		margin: 5px 0 20px -5px;
+	}
+	#menu-icon { /*hamburger menu*/
+		display: inline-block;
+	}
+	nav:hover ul {
+		display: block;
+	}
+	nav ul, nav:active {
+		display: none;
+		z-index: 1000; /*vises øverste lag*/
+		position: absolute;
+		opacity: 0.9;
+		background: #F5F5F5;
+		border: 3px solid #749CD3; 
+		right: 20px;
+		width: 25%;
+	}
+	nav li {
+		text-align: center;
+		width: 100%;
+	}
+	.one-third {
+		float: right;
+		width: 100%;
+	}
+	.icon-wrap {
+		height: 130px;
+		width: 130px;
+		margin-top: 3%;
+	}
+	.left-col {
+		width: 100%;
+		padding: 0;
+	}
+	.sidebar {
+		width: 98%;
+		margin: 0;
+		padding: 1%;
+	}
+	.one-third-padding {
+		width: 98%;
+		margin: 0;
+		padding: 1%;
+	}
+	.footer-tekst {
+		font-size: 120%;
+		padding-top: 40px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
