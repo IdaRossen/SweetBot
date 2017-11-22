@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*Base styling er til store skærme - media queries er nederst*/
+/*Base styling - til store skærme - media queries er nederst*/
 * {
 	margin: 0;
 	border: 0;
@@ -10,14 +10,15 @@
 
 	body {
 		background: #F1F6F8;
-		font-family: sans-serif;
+		font-family: 'lato', sans-serif;
+		color: black;
 		margin: 0 auto;
 }
 
 	p {
 		font-family: 'lato', sans-serif;
 		color: black;
-		font-size: 160%;
+		font-size: 120%;
 		line-height: 155%;
 		padding: 3%;
 		text-align: left;
@@ -26,8 +27,8 @@
 	h3 {
 		font-size: 175%;
 		line-height: 155%;
-		font-weight: 500; 
-		color: black;
+		font-weight: 600; 
+		color: #B2C345;
 		text-align: center;
 		text-transform: uppercase;
 		padding: 0;
@@ -55,7 +56,7 @@
 
 /*Styling af wrapper*/
 	#wrapper {
-		max-width: 1200px;
+		max-width: 1100px;
 		margin: 0 auto; /*centrere det på siden*/
 }
 /*banner wrapper*/
@@ -103,8 +104,6 @@
 }
 
 
-
-
 /*selve menuen er jo en liste, her bliver den til en ordentlig menu*/
 	ul {
 		list-style: none /*fjerner liste punkterne*/
@@ -131,6 +130,13 @@
 
 
 
+
+
+
+/*FORSIDEN*/
+
+
+
 /*Gallery Slider*/
 	.slider {
 		max-width: 1200px;
@@ -144,8 +150,6 @@
 	.slider .bx-wrapper .bx-controls-direction a {
 		display: none;
 }
-
-
 /*Tre Ikoner*/
 	.one-third {
 		width: 33.333%;
@@ -198,6 +202,11 @@
 		padding: 2%;
 }
 
+/*FORSIDEN SLUT*/
+
+
+
+
 
 /*Footer starter*/
 	footer {
@@ -217,6 +226,92 @@
 		text-align: center;
 		padding-top: 30px;
 }
+/*Footer Slut*/
+
+
+
+/*Om os - start*/
+
+	.half-padding {
+		width: 39%;
+		float: left;
+		margin: 2%;
+		text-align: justify;
+}
+	.sidebar1 {
+		width: 90%;
+		align-content: center;
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto; 
+		margin-bottom: 50px;
+	}
+/*om os - færdig*/
+
+
+
+
+/*Kontakt formular*/
+#kontakt{
+	margin-top: 50px;
+	margin-left: 0px;
+	background-attachment: fixed;
+	margin: 70px;
+	align-content: center;
+	padding: 50px 10px 10px 10px;
+	display: flex;
+	font-family:'lato', sans-serif;
+}
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #DF9B67;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker purple color */
+input[type=submit]:hover {
+    background-color: #C9DB50;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    padding: 20px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+p{
+	line-height: 25px;
+	font-family: din condensed, tahoma, verdana, sans-serif;
+}
+.quote{
+	margin-top: 300px;
+}
+.kontakt-mellemrum-øverst {
+	height:20px;
+}
+#kontakt-mellemrum {
+	height: 140px;
+}
+
+/*Kontakt Formular Slut*/
+
 
 
 
@@ -235,14 +330,11 @@
 		h3 {
 		font-size: 140%;
 	}
-		nav {
-		float: right;
-		padding: 25px 20px 0px 0px;
-		margin-right: -40px;
 }
 	
 /*Mobiler*/
 @media screen and (max-width: 768px) {
+
 	p {
 		font-size: 120%;
 	}
@@ -258,6 +350,7 @@
 	}
 	#menu-icon { /*hamburger menu*/
 		display: inline-block;
+		margin-right: 40px;
 	}
 	nav:hover ul {
 		display: block;
@@ -269,12 +362,15 @@
 		opacity: 0.9;
 		background: #F5F5F5;
 		border: 3px solid #749CD3; 
-		right: 20px;
+		right: 5px;
 		width: 25%;
 	}
 	nav li {
 		text-align: center;
 		width: 100%;
+	}
+	nav img {
+		text-align: center;
 	}
 	.one-third {
 		float: right;
