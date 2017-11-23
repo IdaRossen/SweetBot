@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*Base styling er til store skærme - media queries er nederst*/
+/*Base styling - til store skærme - media queries er nederst*/
 * {
 	margin: 0;
 	border: 0;
@@ -10,24 +10,24 @@
 
 	body {
 		background: #F1F6F8;
-		font-family: sans-serif;
+		font-family: 'lato', sans-serif;
+		
 		margin: 0 auto;
 }
 
 	p {
 		font-family: 'lato', sans-serif;
-		color: black;
-		font-size: 160%;
-		line-height: 155%;
-		padding: 3%;
+		
+		font-size: 17px;
+		
 		text-align: left;
 }
 /* Overskrifter*/
 	h3 {
 		font-size: 175%;
 		line-height: 155%;
-		font-weight: 500; 
-		color: black;
+		font-weight: 600; 
+		color: #B2C345;
 		text-align: center;
 		text-transform: uppercase;
 		padding: 0;
@@ -55,7 +55,7 @@
 
 /*Styling af wrapper*/
 	#wrapper {
-		max-width: 1200px;
+		max-width: 1100px;
 		margin: 0 auto; /*centrere det på siden*/
 }
 /*banner wrapper*/
@@ -103,8 +103,6 @@
 }
 
 
-
-
 /*selve menuen er jo en liste, her bliver den til en ordentlig menu*/
 	ul {
 		list-style: none /*fjerner liste punkterne*/
@@ -120,14 +118,20 @@
 		color: #749CD3;
 }
 /*Den side man er på*/
-	.current {
-		color: #3F5767;
-}
+
 	a:hover {
 		color: #A5BDCD;
 }
+
 /*Navigations menu færdig!*/
 
+
+
+
+
+
+
+/*FORSIDEN*/
 
 
 
@@ -144,8 +148,6 @@
 	.slider .bx-wrapper .bx-controls-direction a {
 		display: none;
 }
-
-
 /*Tre Ikoner*/
 	.one-third {
 		width: 33.333%;
@@ -174,7 +176,7 @@
 	.left-col {
 		float: left;
 		margin: 0 auto;
-		width: 60%;
+		width: 48%;
 		height: auto;
 		padding: 1%;
 }
@@ -182,7 +184,7 @@
 	.sidebar {
 		float: right;
 		margin: 0 auto;
-		width: 32%;
+		width: 48%;
 		height: auto;
 		padding: 1%;
 }
@@ -197,6 +199,188 @@
 		clear: both;
 		padding: 2%;
 }
+
+/*FORSIDEN SLUT*/
+
+
+
+/* Ydelser Start*/
+
+.picture-code {
+	float: left;
+	width: 40%;
+	margin: 80px 25px 10px 100px;
+}
+
+.picture-security {
+	float: right;
+	width: 40%;
+	margin: 80px 115px 10px 55px;
+}
+.ydelser {
+	font-family: lato, sans-serif;
+	font-size: 17px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.ydelser2 {
+	font-family: lato, sans-serif;
+	font-size: 15px;
+	margin-left: 55px;
+}
+
+h2 {
+		font-family: lato, sans-serif;
+		font-size: 36px;
+		margin-left: 353px;
+		margin-top: 35px;
+	}
+
+h4 {
+	font-family: lato, sans-serif;
+	font-size: 25px;
+	margin-top: 100px;
+	text-align: center;
+}
+	.left-col-branding {
+		float: right;
+		margin: 0 auto;
+		width: 48%;
+		height: auto;
+		padding: 1%;
+}
+/*computer billede*/
+	.sidebar-branding {
+		float: left;
+		margin: 0 auto;
+		width: 48%;
+		height: auto;
+		padding: 1%;
+}
+
+/*Ydelser Slut*/
+
+/*Om os - start*/
+
+	.half-padding {
+		width: 39%;
+		float: left;
+		margin: 2%;
+		text-align: justify;
+}
+	.sidebar1 {
+		width: 90%;
+		align-content: center;
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto; 
+		margin-bottom: 50px;
+	}
+/*om os - færdig*/
+
+
+
+
+/*Kontakt formular*/
+#kontakt{
+	margin-top: 50px;
+	margin-left: 0px;
+	background-attachment: fixed;
+	margin: 70px;
+	align-content: center;
+	padding: 50px 10px 10px 10px;
+	display: flex;
+	font-family:'lato', sans-serif;
+}
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #DF9B67;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker purple color */
+input[type=submit]:hover {
+    background-color: #C9DB50;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    padding: 20px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+p{
+	line-height: 25px;
+	font-family: 'lato', sans-serif;
+}
+.quote{
+	margin-top: 300px;
+}
+.kontakt-mellemrum-øverst {
+	height:20px;
+}
+#kontakt-mellemrum {
+	height: 140px;
+}
+
+/*Kontakt Formular Slut*/
+
+
+
+/* Her begynder hotbotsiden */
+ 
+#banner {
+	background-image: url("../img/pics/hotbot.jpg");
+	background-size: cover;
+	padding: 150px 0;
+	text-align: center;
+	color: white;
+}
+
+#banner h1 {
+	color: white;
+}
+
+#banner p {
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	font-weight: lighter;
+	
+}
+
+.card {
+
+	padding: 50px;
+	text-align: center;
+}
+.card p {
+	font-size: 100%;
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+}
+
 
 
 /*Footer starter*/
@@ -217,6 +401,9 @@
 		text-align: center;
 		padding-top: 30px;
 }
+/*Footer Slut*/
+
+
 
 
 
@@ -235,14 +422,11 @@
 		h3 {
 		font-size: 140%;
 	}
-		nav {
-		float: right;
-		padding: 25px 20px 0px 0px;
-		margin-right: -40px;
 }
 	
 /*Mobiler*/
 @media screen and (max-width: 768px) {
+
 	p {
 		font-size: 120%;
 	}
@@ -258,6 +442,7 @@
 	}
 	#menu-icon { /*hamburger menu*/
 		display: inline-block;
+		margin-right: 40px;
 	}
 	nav:hover ul {
 		display: block;
@@ -269,12 +454,16 @@
 		opacity: 0.9;
 		background: #F5F5F5;
 		border: 3px solid #749CD3; 
-		right: 20px;
+		right: 5px;
 		width: 25%;
 	}
 	nav li {
 		text-align: center;
 		width: 100%;
+		z-index: 1001; /*vises øverste lag*/
+	}
+	nav img {
+		text-align: center;
 	}
 	.one-third {
 		float: right;
@@ -290,6 +479,15 @@
 		padding: 0;
 	}
 	.sidebar {
+		width: 98%;
+		margin: 0;
+		padding: 1%;
+	}
+		.left-col-branding {
+		width: 100%;
+		padding: 0;
+	}
+	.sidebar-branding {
 		width: 98%;
 		margin: 0;
 		padding: 1%;
